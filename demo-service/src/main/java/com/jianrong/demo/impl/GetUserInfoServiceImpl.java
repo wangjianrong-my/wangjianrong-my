@@ -25,10 +25,11 @@ public class GetUserInfoServiceImpl implements GetUserInfoService{
     @Autowired
     protected MVCMybatisDemoUserMapper mVCMybatisDemoUserMapper;
 
-    @Override
     public void getUserInfoById(String id, Model model)
     {
 
+
+        System.out.println("aaag");
 
         //search by id, get UserInfo
         MVCMybatisDemoUser user = mVCMybatisDemoUserMapper.queryUserInfo(id);
