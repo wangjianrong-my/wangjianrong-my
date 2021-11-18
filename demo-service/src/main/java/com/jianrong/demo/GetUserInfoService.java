@@ -14,5 +14,5 @@ import org.springframework.ui.Model;
 
 public interface GetUserInfoService {
 
-
+    public void getUserInfoById(String id, Model model);
 }
