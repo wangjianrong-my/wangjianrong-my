@@ -31,6 +31,8 @@ public class GetUserInfoServiceImpl implements GetUserInfoService{
 
         System.out.println("aaag");
 
+        System.out.println("reset1");
+
         //search by id, get UserInfo
         MVCMybatisDemoUser user = mVCMybatisDemoUserMapper.queryUserInfo(id);
         model.addAttribute("name", user.getId())
